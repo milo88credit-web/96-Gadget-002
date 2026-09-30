@@ -8,18 +8,18 @@
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
-  <title>會員專屬活動</title>
+  <title>會員專屬禮遇</title>
 
   <meta
     name="description"
-    content="探索最新會員活動及專屬會員禮遇。"
+    content="為新會員而設，開啟你的專屬會員禮遇。"
   >
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="會員專屬活動">
+  <meta property="og:title" content="會員專屬禮遇">
   <meta
     property="og:description"
-    content="探索最新會員活動及專屬會員禮遇。"
+    content="為新會員而設，開啟你的專屬會員禮遇。"
   >
 
   <style>
@@ -55,16 +55,16 @@
 
       background:
         radial-gradient(
-          circle at 50% -10%,
-          rgba(30, 112, 82, 0.38) 0%,
-          rgba(8, 48, 37, 0.20) 38%,
-          transparent 62%
+          circle at 50% 0%,
+          rgba(25, 128, 89, 0.24) 0%,
+          rgba(4, 62, 45, 0.10) 32%,
+          transparent 60%
         ),
         linear-gradient(
           180deg,
-          #09231c 0%,
-          #061a15 48%,
-          #03100d 100%
+          #063d2f 0%,
+          #02291f 48%,
+          #001a14 100%
         );
 
       overflow-x: hidden;
@@ -84,9 +84,9 @@
       justify-content: center;
 
       padding:
-        max(26px, env(safe-area-inset-top))
-        20px
-        max(26px, env(safe-area-inset-bottom));
+        max(24px, env(safe-area-inset-top))
+        14px
+        max(24px, env(safe-area-inset-bottom));
     }
 
 
@@ -98,60 +98,59 @@
       position: relative;
 
       width: 100%;
-      max-width: 540px;
+      max-width: 390px;
 
-      padding:
-        66px
-        28px
-        42px;
+      padding: 54px 27px 40px;
 
       text-align: center;
 
       border-radius: 30px;
 
       border:
-        1px solid
-        rgba(190, 158, 88, 0.25);
+        1px solid rgba(212, 175, 82, 0.36);
 
       background:
         radial-gradient(
-          circle at 50% 0%,
-          rgba(43, 119, 89, 0.20),
-          transparent 43%
+          circle at 50% 6%,
+          rgba(32, 145, 99, 0.17),
+          transparent 38%
         ),
         linear-gradient(
           180deg,
-          rgba(12, 48, 38, 0.98) 0%,
-          rgba(5, 29, 23, 0.99) 100%
+          rgba(5, 70, 51, 0.98) 0%,
+          rgba(2, 50, 37, 0.99) 48%,
+          rgba(0, 35, 27, 0.99) 100%
         );
 
       box-shadow:
-        0 30px 85px rgba(0, 0, 0, 0.34),
-        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+        0 30px 90px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255, 239, 178, 0.05);
 
       overflow: hidden;
     }
 
 
-    /* Top ambient glow */
+    /* =========================
+       BACKGROUND GLOW
+    ========================= */
 
     .card::before {
       content: "";
 
       position: absolute;
 
-      width: 400px;
-      height: 350px;
+      width: 360px;
+      height: 280px;
 
       left: 50%;
-      top: -245px;
+      top: -170px;
 
       transform: translateX(-50%);
 
       background:
         radial-gradient(
           circle,
-          rgba(68, 180, 126, 0.18),
+          rgba(60, 195, 128, 0.18),
           transparent 68%
         );
 
@@ -160,7 +159,52 @@
 
 
     /* =========================
-       OFFER
+       新人豪禮
+    ========================= */
+
+    .offer-title {
+      position: relative;
+      z-index: 2;
+
+      color: #fffaf0;
+
+      font-size: 39px;
+      line-height: 1.15;
+
+      font-weight: 900;
+
+      letter-spacing: 3px;
+
+      text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.30);
+    }
+
+
+    /* =========================
+       TOP GOLD LINE
+    ========================= */
+
+    .title-line {
+      width: 64%;
+      height: 1px;
+
+      margin: 20px auto 25px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(239, 202, 105, 0.75),
+          transparent
+        );
+
+      box-shadow:
+        0 0 9px rgba(236, 192, 84, 0.22);
+    }
+
+
+    /* =========================
+       250%
     ========================= */
 
     .offer {
@@ -169,21 +213,14 @@
       width: 100%;
     }
 
-
-    /* =========================
-       250%
-    ========================= */
-
     .offer-number {
       position: relative;
       z-index: 2;
 
       display: inline-block;
 
-      padding-bottom: 6px;
-
-      font-size: clamp(84px, 23vw, 128px);
-      line-height: 0.9;
+      font-size: clamp(90px, 27vw, 116px);
+      line-height: 0.92;
 
       font-weight: 900;
 
@@ -194,10 +231,10 @@
       background:
         linear-gradient(
           180deg,
-          #fff8d6 0%,
-          #f9e6a4 20%,
-          #eac66c 55%,
-          #c99b3f 100%
+          #fff5bd 0%,
+          #ffe17b 22%,
+          #e9b83e 57%,
+          #b77b18 100%
         );
 
       -webkit-background-clip: text;
@@ -207,45 +244,44 @@
 
       filter:
         drop-shadow(
-          0 5px 0 rgba(77, 47, 5, 0.10)
+          0 4px 0 rgba(80, 50, 3, 0.12)
         )
         drop-shadow(
-          0 0 14px rgba(229, 192, 96, 0.16)
+          0 0 17px rgba(255, 211, 93, 0.18)
         );
     }
 
 
     /* =========================
-       GOLD LINE
+       GOLD UNDERLINE
     ========================= */
 
-    .offer::before {
+    .offer::after {
       content: "";
 
       position: absolute;
-      z-index: 1;
 
-      width: 82%;
+      width: 88%;
       height: 1px;
 
-      left: 9%;
-      top: 52%;
+      left: 6%;
+      bottom: 0;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          rgba(234, 199, 108, 0.88),
+          rgba(255, 213, 98, 0.85),
           transparent
         );
 
       box-shadow:
-        0 0 12px rgba(220, 179, 80, 0.34);
+        0 0 12px rgba(240, 192, 73, 0.35);
     }
 
 
     /* =========================
-       SPARKS
+       SPARKLES
     ========================= */
 
     .spark {
@@ -257,78 +293,46 @@
 
       border-radius: 50%;
 
-      background: #fff5c4;
+      background: #fff3ae;
 
       box-shadow:
-        0 0 8px #ffe99a,
-        0 0 18px rgba(222, 180, 76, 0.62);
+        0 0 6px #fff1a0,
+        0 0 14px rgba(255, 215, 99, 0.8);
     }
 
     .spark.one {
-      left: 14%;
-      top: 7%;
+      left: 7%;
+      top: 4%;
     }
 
     .spark.two {
-      right: 13%;
-      bottom: 5%;
+      right: 5%;
+      bottom: 4%;
     }
 
     .spark.three {
       left: 50%;
-      bottom: 1%;
+      bottom: -2%;
     }
 
 
     /* =========================
-       新人豪禮
-    ========================= */
-
-    .offer-title {
-      position: relative;
-
-      margin-top: 32px;
-
-      color: #ffffff;
-
-      font-size: clamp(38px, 10vw, 54px);
-      line-height: 1.15;
-
-      font-weight: 900;
-
-      letter-spacing: 3px;
-
-      text-shadow:
-        0 3px 0 rgba(0, 0, 0, 0.16),
-        0 0 14px rgba(255, 255, 255, 0.05);
-    }
-
-
-    /* =========================
-       CHAMPAGNE DIVIDER
+       SECOND DIVIDER
     ========================= */
 
     .gold-divider {
-      width: 58%;
-      max-width: 260px;
-
+      width: 55%;
       height: 1px;
 
-      margin:
-        20px
-        auto
-        0;
+      margin: 27px auto 0;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          rgba(233, 199, 111, 0.65),
+          rgba(218, 178, 75, 0.35),
           transparent
         );
-
-      box-shadow:
-        0 0 10px rgba(215, 174, 79, 0.12);
     }
 
 
@@ -337,12 +341,12 @@
     ========================= */
 
     .description {
-      margin-top: 34px;
+      margin-top: 32px;
 
-      color: #a6b9b0;
+      color: #d4ddd8;
 
-      font-size: 16px;
-      line-height: 1.85;
+      font-size: 15px;
+      line-height: 1.8;
 
       font-weight: 400;
 
@@ -350,32 +354,29 @@
     }
 
     .description strong {
-      color: #ead39a;
+      color: #f0c85b;
 
-      font-weight: 700;
+      font-weight: 800;
     }
 
 
     /* =========================
-       DIVIDER
+       GREEN DIVIDER
     ========================= */
 
     .divider {
       position: relative;
 
-      width: 78px;
+      width: 82px;
       height: 1px;
 
-      margin:
-        33px
-        auto
-        29px;
+      margin: 30px auto 26px;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          rgba(87, 181, 135, 0.45),
+          rgba(94, 235, 173, 0.28),
           transparent
         );
     }
@@ -385,45 +386,87 @@
 
       position: absolute;
 
-      width: 27px;
-      height: 2px;
+      width: 28px;
+      height: 3px;
 
       left: 50%;
       top: 50%;
 
       transform: translate(-50%, -50%);
 
-      background: #65d49a;
+      border-radius: 20px;
+
+      background: #72efbb;
 
       box-shadow:
-        0 0 8px rgba(71, 210, 145, 0.50);
+        0 0 10px rgba(79, 238, 172, 0.62);
     }
 
 
     /* =========================
-       QUESTION
+       QUESTION + HAND
     ========================= */
 
     .question {
-      margin-bottom: 25px;
+      margin-bottom: 22px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
 
       color: #ffffff;
 
-      font-size: 19px;
+      font-size: 18px;
       line-height: 1.4;
 
       font-weight: 800;
 
       letter-spacing: 0.4px;
+
+      white-space: nowrap;
+    }
+
+    .question-pointer {
+      display: inline-block;
+
+      font-size: 34px;
+      line-height: 1;
+
+      transform-origin: center;
+
+      filter:
+        drop-shadow(
+          0 3px 4px rgba(0, 0, 0, 0.38)
+        );
+
+      animation:
+        pointDown 1.3s ease-in-out infinite;
+    }
+
+    @keyframes pointDown {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(7px);
+      }
+
     }
 
 
     /* =========================
-       BUTTON GROUP
+       BUTTONS
     ========================= */
 
     .buttons {
       display: flex;
+
       flex-direction: column;
 
       gap: 14px;
@@ -431,23 +474,20 @@
 
     .cta {
       width: 100%;
-      min-height: 64px;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
-      border-radius: 15px;
-
       text-decoration: none;
 
-      font-size: 18px;
-      font-weight: 750;
+      -webkit-tap-highlight-color: transparent;
 
       transition:
         transform 0.18s ease,
         box-shadow 0.18s ease,
-        background 0.18s ease;
+        filter 0.18s ease;
     }
 
     .cta:active {
@@ -456,43 +496,50 @@
 
 
     /* =========================
-       PRIMARY CTA
+       MAIN CTA
     ========================= */
 
     .primary {
+      min-height: 72px;
+
       gap: 14px;
 
-      color: #05140c;
+      border-radius: 17px;
+
+      color: #002c1f;
+
+      font-size: 20px;
+      font-weight: 900;
 
       background:
         linear-gradient(
           135deg,
-          #79e5a6 0%,
-          #49ca81 48%,
-          #31b96d 100%
+          #9bffc4 0%,
+          #5ef39a 30%,
+          #31db73 64%,
+          #19bd5b 100%
         );
 
       border:
-        1px solid
-        rgba(156, 245, 192, 0.45);
+        1px solid rgba(221, 255, 225, 0.82);
 
       box-shadow:
-        0 12px 30px rgba(48, 185, 109, 0.18),
-        0 0 22px rgba(69, 204, 130, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        0 13px 32px rgba(36, 222, 116, 0.25),
+        0 0 25px rgba(72, 255, 146, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
     }
 
     .primary:hover {
+      filter: brightness(1.06);
+
       box-shadow:
-        0 16px 36px rgba(48, 185, 109, 0.25),
-        0 0 27px rgba(69, 204, 130, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.38);
+        0 16px 38px rgba(36, 222, 116, 0.32),
+        0 0 31px rgba(72, 255, 146, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.60);
     }
 
     .arrow {
-      margin-left: 2px;
-
-      font-size: 21px;
+      font-size: 22px;
       line-height: 1;
     }
 
@@ -502,39 +549,51 @@
     ========================= */
 
     .whatsapp {
+      min-height: 63px;
+
       gap: 10px;
 
-      color: #78dfa5;
+      border-radius: 17px;
+
+      color: #67eda7;
+
+      font-size: 17px;
+      font-weight: 800;
 
       border:
-        1px solid
-        rgba(82, 202, 135, 0.52);
+        1px solid rgba(67, 224, 144, 0.62);
 
       background:
         linear-gradient(
           180deg,
-          rgba(16, 65, 49, 0.38),
-          rgba(7, 42, 34, 0.42)
+          rgba(4, 62, 45, 0.75),
+          rgba(1, 40, 30, 0.88)
         );
 
       box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+        inset 0 1px 0 rgba(182, 255, 217, 0.05);
     }
 
     .whatsapp:hover {
       background:
         linear-gradient(
           180deg,
-          rgba(20, 81, 59, 0.46),
-          rgba(9, 50, 39, 0.50)
+          rgba(7, 77, 55, 0.84),
+          rgba(2, 49, 36, 0.94)
         );
     }
+
+
+    /* =========================
+       WHATSAPP ICON
+    ========================= */
 
     .whatsapp-icon {
       width: 23px;
       height: 23px;
 
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
     }
@@ -548,96 +607,29 @@
 
 
     /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 520px) {
-
-      .page {
-        align-items: flex-start;
-
-        padding:
-          max(30px, env(safe-area-inset-top))
-          16px
-          max(30px, env(safe-area-inset-bottom));
-      }
-
-      .card {
-        max-width: 390px;
-
-        padding:
-          66px
-          27px
-          41px;
-
-        border-radius: 29px;
-      }
-
-      .offer-number {
-        font-size: clamp(82px, 25vw, 108px);
-
-        letter-spacing: -5px;
-      }
-
-      .offer-title {
-        margin-top: 31px;
-
-        font-size: 39px;
-      }
-
-      .gold-divider {
-        margin-top: 18px;
-      }
-
-      .description {
-        margin-top: 31px;
-
-        font-size: 15px;
-
-        line-height: 1.9;
-      }
-
-      .divider {
-        margin-top: 31px;
-        margin-bottom: 28px;
-      }
-
-      .question {
-        margin-bottom: 25px;
-
-        font-size: 18px;
-      }
-
-      .cta {
-        min-height: 62px;
-
-        font-size: 17px;
-      }
-    }
-
-
-    /* =========================
-       SMALL PHONES
+       SMALL MOBILE
     ========================= */
 
     @media (max-width: 360px) {
 
       .page {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       .card {
-        padding-left: 22px;
-        padding-right: 22px;
-      }
-
-      .offer-number {
-        font-size: 78px;
+        padding:
+          49px
+          21px
+          34px;
       }
 
       .offer-title {
-        font-size: 35px;
+        font-size: 34px;
+      }
+
+      .offer-number {
+        font-size: 84px;
       }
 
       .description {
@@ -645,12 +637,24 @@
       }
 
       .question {
-        font-size: 17px;
+        font-size: 16px;
+        gap: 5px;
       }
 
-      .cta {
+      .question-pointer {
+        font-size: 30px;
+      }
+
+      .primary {
+        min-height: 67px;
+        font-size: 18px;
+      }
+
+      .whatsapp {
+        min-height: 59px;
         font-size: 16px;
       }
+
     }
 
 
@@ -661,20 +665,20 @@
     @media (min-width: 768px) {
 
       .card {
-        max-width: 610px;
+        max-width: 580px;
 
         padding:
-          78px
-          60px
-          54px;
+          68px
+          58px
+          52px;
+      }
+
+      .offer-title {
+        font-size: 53px;
       }
 
       .offer-number {
         font-size: 150px;
-      }
-
-      .offer-title {
-        font-size: 56px;
       }
 
       .description {
@@ -682,14 +686,37 @@
       }
 
       .question {
-        font-size: 22px;
+        font-size: 21px;
+        gap: 10px;
       }
 
-      .cta {
-        min-height: 70px;
-
-        font-size: 19px;
+      .question-pointer {
+        font-size: 38px;
       }
+
+      .primary {
+        min-height: 78px;
+        font-size: 21px;
+      }
+
+      .whatsapp {
+        min-height: 68px;
+        font-size: 18px;
+      }
+
+    }
+
+
+    /* =========================
+       ACCESSIBILITY
+    ========================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .question-pointer {
+        animation: none;
+      }
+
     }
 
   </style>
@@ -701,6 +728,16 @@
   <main class="page">
 
     <section class="card">
+
+
+      <!-- 新人豪禮 -->
+
+      <h1 class="offer-title">
+        新人豪禮
+      </h1>
+
+
+      <div class="title-line"></div>
 
 
       <!-- 250% -->
@@ -718,16 +755,10 @@
       </div>
 
 
-      <!-- 新人豪禮 -->
-
-      <h1 class="offer-title">
-        新人豪禮
-      </h1>
-
       <div class="gold-divider"></div>
 
 
-      <!-- Description -->
+      <!-- DESCRIPTION -->
 
       <div class="description">
 
@@ -737,44 +768,59 @@
       </div>
 
 
-      <!-- Divider -->
+      <!-- DIVIDER -->
 
       <div class="divider"></div>
 
 
-      <!-- Question -->
+      <!-- QUESTION + HAND -->
 
       <div class="question">
-        準備好加入了嗎？
+
+        <span>
+          準備好加入了嗎？
+        </span>
+
+        <span
+          class="question-pointer"
+          aria-hidden="true"
+        >
+          👇
+        </span>
+
       </div>
 
 
-      <!-- Buttons -->
+      <!-- BUTTONS -->
 
       <div class="buttons">
 
 
-        <!-- Join -->
+        <!-- MAIN CTA -->
 
         <a
           class="cta primary"
-          href="https://96jqk.com/?ag=kfbads003"
+          href="https://96jqk.com/?ag=kfbads001"
           target="_blank"
           rel="noopener noreferrer"
         >
 
-          <span>立即加入</span>
+          <span>
+            立即加入
+          </span>
 
-          <span class="arrow">→</span>
+          <span class="arrow">
+            →
+          </span>
 
         </a>
 
 
-        <!-- WhatsApp -->
+        <!-- WHATSAPP -->
 
         <a
           class="cta whatsapp"
-          href="https://wa.me/85252176245?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E6%96%B0%E6%9C%83%E5%93%A1%E8%B1%AA%E7%A4%BC%E3%80%82%E3%80%90KFBADS003%E3%80%91"
+          href="https://wa.me/85252176245?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E6%96%B0%E6%9C%83%E5%93%A1%E8%B1%AA%E7%A4%BC%E3%80%82%E3%80%90KFBADS001%E3%80%91"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -785,7 +831,9 @@
               viewBox="0 0 32 32"
               aria-hidden="true"
             >
+
               <path d="M16.01 3C8.83 3 3 8.67 3 15.65c0 2.46.73 4.86 2.1 6.91L3 29l6.65-2.06a13.18 13.18 0 0 0 6.36 1.64C23.18 28.58 29 22.92 29 15.65 29 8.67 23.18 3 16.01 3Zm0 23.45c-2.05 0-4.05-.54-5.79-1.57l-.42-.25-3.95 1.22 1.28-3.75-.27-.43a10.45 10.45 0 0 1-1.73-5.77c0-5.81 4.88-10.54 10.88-10.54 6 0 10.88 4.73 10.88 10.54 0 5.82-4.88 10.55-10.88 10.55Zm5.97-7.89c-.33-.16-1.94-.93-2.24-1.04-.3-.11-.52-.16-.74.16-.22.32-.85 1.04-1.04 1.25-.19.22-.38.24-.71.08-.33-.16-1.38-.49-2.63-1.57-.97-.84-1.63-1.88-1.82-2.2-.19-.32-.02-.49.14-.65.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.88.41-.3.32-1.15 1.09-1.15 2.66 0 1.57 1.18 3.09 1.34 3.3.16.22 2.32 3.44 5.62 4.82.79.33 1.4.53 1.88.68.79.24 1.5.21 2.07.13.63-.09 1.94-.77 2.21-1.52.27-.75.27-1.39.19-1.52-.08-.14-.3-.22-.63-.38Z"/>
+
             </svg>
 
           </span>
